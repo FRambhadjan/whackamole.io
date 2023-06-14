@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(../img/boss.gif);
+    background-size: cover;
+}
+
+.wrapper {
+    margin-left: 170px;
+    margin-top: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, 100px);
+    grid-template-areas: 
+    "em om hm"
+    ;
+}
+
+.easyModeDiv {
+    grid-area: em;
+    width: 290px;
+}
+
+.easyModeImage:active{
+    height: 90px;
+    width: 280px;
+    margin-left: 5px;
+}
+
+.okayModeDiv {
+    grid-area: om;
+    width: 290px;
+}
+
+.okayModeDiv:hover{
+    cursor: pointer;
+}
+
+.okayModeImage:active{
+    height: 90px;
+    width: 280px;
+    margin-left: 5px;
+}
+
+.hardModeDiv {
+    grid-area: hm;
+    width: 290px;
+}
+
+.hardModeImage:active{
+    height: 90px;
+    width: 280px;
+    margin-left: 5px;
+}
+
+button {
+    width: 400px;
+    height: 50px;
+    margin-left: 660px;
+    margin-top: 830px;
+    border-radius: 40px;
+    background-color: #964B00;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+}

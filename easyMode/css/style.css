@@ -1,0 +1,131 @@
+@font-face {
+    font-family: pixel;
+    src: url(../../fonts/pixelFont.ttf);
+}
+
+body {
+    background-color:black;
+    background-image: url(../../img/dirtbackground.png);
+    font-family:'pixel';
+}
+
+header {
+    margin-top: -100px;
+    font-size: 150pt;
+    grid-area: hd;
+}
+
+.tile {
+    background-image: url(../../img/emptyhole.png);
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 90px;
+}
+
+.active {
+    background-image: url(../../img/mole.gif);
+}
+
+.wrapper {
+    margin-top: 100px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    ". . . hd hd hd hd hd hd . . ."
+    ". . . . . score . . . . . ."
+    ". . . . . main . . . . . ."
+    ;
+}
+
+.tile-wrapper {
+    grid-area: main;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows: repeat(3, 150px);
+}
+
+.lives1div {
+    margin-top: 100px;
+    margin-left: 200px;
+    position: absolute;
+    grid-area: l1;
+    height: 50px;
+    width: 50px;
+}
+
+.lives2div {
+    margin-top: 155px;
+    margin-left: 200px;
+    position: absolute;
+    grid-area: l2;
+    height: 50px;
+    width: 50px;
+}
+
+.lives3div {
+    margin-top: 210px;
+    margin-left: 200px;
+    position: absolute;
+    grid-area: l3;
+    height: 50px;
+    width: 50px;
+}
+
+.lives1 {
+    height: 50px;
+    width: 50px;
+}
+
+.lives2 {
+    height: 50px;
+    width: 50px;
+}
+
+.lives3 {
+    height: 50px;
+    width: 50px;
+}
+
+.startdiv {
+    position: absolute;
+    position: fixed;
+    margin-left: 700px;
+    margin-top: 300px;
+    cursor: pointer;
+}
+
+.start {
+    position: absolute;
+}
+
+.start:active {
+    height: 140px;
+    width: 190px;
+    margin-left: 5px;
+}
+
+.score {
+    position: absolute;
+    font-size: 200px;
+    margin-left: 180px;
+    margin-top: 285px;
+}
+
+.back {
+    position: absolute;
+    font-size: 100px;
+    margin-top: 800px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}

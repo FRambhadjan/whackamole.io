@@ -1,0 +1,83 @@
+@font-face {
+    font-family: pixel;
+    src: url(../../fonts/pixelFont.ttf);
+}
+
+* {
+    margin: 0px;
+}
+
+body {
+background-color: black;
+}
+
+.deathtextcontainer{
+    background-color: black;
+}
+
+.deathtext {
+    text-align: center;
+    font-family: pixel;
+    color:brown;
+    font-size: 370px;
+}
+
+.deathtextHS {
+    text-align: center;
+    font-family: pixel;
+    color: brown;
+}
+
+.retry {
+    text-align: center;
+    font-family: pixel;
+    color:brown;
+    margin-top: 300px;
+    font-size: 90px;
+}
+
+.retry:active {
+    text-align: center;
+    font-family: pixel;
+    color:white;
+    margin-top: 300px;
+}
+
+.retry:hover {
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-family: pixel;
+    margin-top: 300px;
+    font-size: 90px;
+}
+
+
+.quit {
+    text-align: center;
+    font-family: pixel;
+    color:brown;
+    font-size: 90px;
+}
+
+.quit:active {
+    text-align: center;
+    font-family: pixel;
+    color:white;
+}
+
+.quit:hover {
+    cursor: pointer;
+    text-align: center;
+    font-family: pixel;
+    font-size: 90px;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+a:active {
+    color: white;
+}
